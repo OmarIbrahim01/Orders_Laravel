@@ -60,6 +60,9 @@ class CreateOrdersTable extends Migration
             $table->integer('sales_note_by');
             $table->string('sales_note_date');
 
+            //Order Active or Archived
+            $table->boolean('active')->default(true);
+
         });
     }
 
