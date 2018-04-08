@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Apr 05, 2018 at 02:46 PM
+-- Generation Time: Apr 08, 2018 at 01:19 PM
 -- Server version: 5.7.19
 -- PHP Version: 7.1.9
 
@@ -115,7 +115,7 @@ CREATE TABLE IF NOT EXISTS `data_rows` (
   `order` int(11) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`),
   KEY `data_rows_data_type_id_foreign` (`data_type_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=226 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=281 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC;
 
 --
 -- Dumping data for table `data_rows`
@@ -219,13 +219,6 @@ INSERT INTO `data_rows` (`id`, `data_type_id`, `field`, `type`, `display_name`, 
 (95, 13, 'full_path', 'text_area', 'Full Path', 1, 1, 1, 1, 1, 1, NULL, 4),
 (96, 13, 'created_at', 'timestamp', 'Created At', 0, 1, 1, 1, 0, 1, NULL, 5),
 (97, 13, 'updated_at', 'timestamp', 'Updated At', 0, 0, 0, 0, 0, 0, NULL, 6),
-(98, 14, 'id', 'checkbox', 'Id', 1, 0, 0, 0, 0, 0, NULL, 0),
-(99, 14, 'order_id', 'checkbox', 'Order Id', 1, 0, 0, 0, 0, 0, NULL, 2),
-(100, 14, 'product_id', 'checkbox', 'Product Id', 1, 0, 0, 0, 0, 0, NULL, 3),
-(101, 14, 'face_id', 'checkbox', 'Face Id', 1, 0, 0, 0, 0, 0, NULL, 4),
-(102, 14, 'discount_id', 'checkbox', 'Discount Id', 1, 0, 0, 0, 0, 0, NULL, 5),
-(103, 14, 'created_at', 'timestamp', 'Created At', 0, 1, 1, 1, 0, 1, NULL, 6),
-(104, 14, 'updated_at', 'timestamp', 'Updated At', 0, 0, 0, 0, 0, 0, NULL, 7),
 (105, 15, 'id', 'checkbox', 'Id', 1, 0, 0, 0, 0, 0, NULL, 0),
 (106, 15, 'order_id', 'checkbox', 'Order Id', 1, 0, 0, 0, 0, 0, NULL, 2),
 (107, 15, 'name', 'text', 'Name', 1, 1, 1, 1, 1, 1, NULL, 3),
@@ -234,15 +227,9 @@ INSERT INTO `data_rows` (`id`, `data_type_id`, `field`, `type`, `display_name`, 
 (110, 15, 'updated_at', 'timestamp', 'Updated At', 0, 0, 0, 0, 0, 0, NULL, 6),
 (111, 16, 'id', 'checkbox', 'Id', 1, 0, 0, 0, 0, 0, NULL, 1),
 (112, 16, 'name', 'text', 'Name', 1, 1, 1, 1, 1, 1, NULL, 2),
-(113, 16, 'active', 'checkbox', 'Active', 1, 1, 1, 1, 1, 1, NULL, 3),
-(114, 16, 'created_at', 'timestamp', 'Created At', 0, 1, 1, 1, 0, 1, NULL, 4),
-(115, 16, 'updated_at', 'timestamp', 'Updated At', 0, 0, 0, 0, 0, 0, NULL, 5),
-(116, 17, 'id', 'checkbox', 'Id', 1, 0, 0, 0, 0, 0, NULL, 1),
-(117, 17, 'name', 'text', 'Name', 1, 1, 1, 1, 1, 1, NULL, 2),
-(118, 17, 'country_id', 'checkbox', 'Country Id', 1, 0, 0, 0, 0, 0, NULL, 3),
-(119, 17, 'active', 'checkbox', 'Active', 1, 1, 1, 1, 1, 1, NULL, 4),
-(120, 17, 'created_at', 'timestamp', 'Created At', 0, 1, 1, 1, 0, 1, NULL, 5),
-(121, 17, 'updated_at', 'timestamp', 'Updated At', 0, 0, 0, 0, 0, 0, NULL, 6),
+(113, 16, 'active', 'checkbox', 'Active', 1, 1, 1, 1, 1, 1, NULL, 5),
+(114, 16, 'created_at', 'timestamp', 'Created At', 0, 1, 1, 1, 0, 1, NULL, 6),
+(115, 16, 'updated_at', 'timestamp', 'Updated At', 0, 0, 0, 0, 0, 0, NULL, 7),
 (122, 18, 'id', 'checkbox', 'Id', 1, 0, 0, 0, 0, 0, NULL, 1),
 (123, 18, 'name', 'text', 'Name', 1, 1, 1, 1, 1, 1, NULL, 2),
 (124, 18, 'active', 'checkbox', 'Active', 1, 1, 1, 1, 1, 1, NULL, 3),
@@ -283,17 +270,6 @@ INSERT INTO `data_rows` (`id`, `data_type_id`, `field`, `type`, `display_name`, 
 (159, 19, 'sales_note_by', 'number', 'Sales Note By', 1, 1, 1, 1, 1, 1, NULL, 33),
 (160, 19, 'sales_note_date', 'text', 'Sales Note Date', 1, 1, 1, 1, 1, 1, NULL, 34),
 (161, 19, 'active', 'checkbox', 'Active', 1, 1, 1, 1, 1, 1, NULL, 35),
-(162, 20, 'id', 'checkbox', 'Id', 1, 0, 0, 0, 0, 0, NULL, 1),
-(163, 20, 'name', 'text', 'Name', 1, 1, 1, 1, 1, 1, NULL, 2),
-(164, 20, 'details', 'text_area', 'Details', 1, 1, 1, 1, 1, 1, NULL, 3),
-(165, 20, 'price', 'number', 'Price', 1, 1, 1, 1, 1, 1, NULL, 4),
-(166, 20, 'active', 'checkbox', 'Active', 1, 1, 1, 1, 1, 1, NULL, 5),
-(167, 20, 'created_at', 'timestamp', 'Created At', 0, 1, 1, 1, 0, 1, NULL, 6),
-(168, 20, 'updated_at', 'timestamp', 'Updated At', 0, 0, 0, 0, 0, 0, NULL, 7),
-(169, 21, 'id', 'checkbox', 'Id', 1, 0, 0, 0, 0, 0, NULL, 1),
-(170, 21, 'name', 'text', 'Name', 1, 1, 1, 1, 1, 1, NULL, 2),
-(171, 21, 'created_at', 'timestamp', 'Created At', 0, 1, 1, 1, 0, 1, NULL, 3),
-(172, 21, 'updated_at', 'timestamp', 'Updated At', 0, 0, 0, 0, 0, 0, NULL, 4),
 (173, 23, 'id', 'checkbox', 'Id', 1, 0, 0, 0, 0, 0, NULL, 0),
 (174, 23, 'order_id', 'checkbox', 'Order Id', 1, 0, 0, 0, 0, 0, NULL, 2),
 (175, 23, 'name', 'text', 'Name', 1, 1, 1, 1, 1, 1, NULL, 3),
@@ -335,11 +311,59 @@ INSERT INTO `data_rows` (`id`, `data_type_id`, `field`, `type`, `display_name`, 
 (217, 33, 'urgent_fee_belongsto_country_relationship', 'relationship', 'countries', 0, 1, 1, 1, 1, 1, '{\"model\":\"App\\\\Country\",\"table\":\"countries\",\"type\":\"belongsTo\",\"column\":\"country_id\",\"key\":\"id\",\"label\":\"name\",\"pivot_table\":\"categories\",\"pivot\":\"0\"}', 7),
 (218, 34, 'id', 'checkbox', 'Id', 1, 0, 0, 0, 0, 0, NULL, 1),
 (219, 34, 'price', 'number', 'Price', 1, 1, 1, 1, 1, 1, NULL, 2),
-(220, 34, 'country_id', 'checkbox', 'Country Id', 1, 1, 1, 1, 1, 1, NULL, 3),
+(220, 34, 'country_id', 'number', 'Country Id', 1, 1, 1, 1, 1, 1, NULL, 3),
 (221, 34, 'active', 'checkbox', 'Active', 1, 1, 1, 1, 1, 1, NULL, 4),
 (222, 34, 'created_at', 'timestamp', 'Created At', 0, 1, 1, 1, 0, 1, NULL, 5),
 (223, 34, 'updated_at', 'timestamp', 'Updated At', 0, 0, 0, 0, 0, 0, NULL, 6),
-(225, 34, 'urgent_fee_belongsto_country_relationship_1', 'relationship', 'countries', 0, 1, 1, 1, 1, 1, '{\"model\":\"App\\\\Country\",\"table\":\"countries\",\"type\":\"belongsTo\",\"column\":\"country_id\",\"key\":\"id\",\"label\":\"name\",\"pivot_table\":\"categories\",\"pivot\":\"0\"}', 7);
+(225, 34, 'urgent_fee_belongsto_country_relationship_1', 'relationship', 'countries', 0, 1, 1, 1, 1, 1, '{\"model\":\"App\\\\Country\",\"table\":\"countries\",\"type\":\"belongsTo\",\"column\":\"country_id\",\"key\":\"id\",\"label\":\"name\",\"pivot_table\":\"categories\",\"pivot\":\"0\"}', 7),
+(233, 36, 'id', 'checkbox', 'Id', 1, 0, 0, 0, 0, 0, NULL, 1),
+(234, 36, 'item_id', 'number', 'Item Id', 0, 1, 1, 1, 1, 1, NULL, 2),
+(235, 36, 'price', 'number', 'Price', 0, 1, 1, 1, 1, 1, NULL, 4),
+(236, 36, 'country_id', 'number', 'Country Id', 0, 1, 1, 1, 1, 1, NULL, 5),
+(237, 36, 'active', 'checkbox', 'Active', 0, 1, 1, 1, 1, 1, NULL, 7),
+(238, 36, 'created_at', 'timestamp', 'Created At', 0, 1, 1, 1, 0, 1, NULL, 8),
+(239, 36, 'updated_at', 'timestamp', 'Updated At', 0, 0, 0, 0, 0, 0, NULL, 9),
+(240, 36, 'item_price_belongsto_country_relationship', 'relationship', 'countries', 0, 1, 1, 1, 1, 1, '{\"model\":\"App\\\\Country\",\"table\":\"countries\",\"type\":\"belongsTo\",\"column\":\"country_id\",\"key\":\"id\",\"label\":\"name\",\"pivot_table\":\"categories\",\"pivot\":\"0\"}', 6),
+(241, 36, 'item_price_belongsto_item_relationship', 'relationship', 'items', 0, 1, 1, 1, 1, 1, '{\"model\":\"App\\\\Item\",\"table\":\"items\",\"type\":\"belongsTo\",\"column\":\"item_id\",\"key\":\"id\",\"label\":\"name\",\"pivot_table\":\"categories\",\"pivot\":\"0\"}', 3),
+(242, 37, 'id', 'checkbox', 'Id', 1, 0, 0, 0, 0, 0, NULL, 1),
+(243, 37, 'name', 'text', 'Name', 1, 1, 1, 1, 1, 1, NULL, 2),
+(244, 37, 'details', 'text_area', 'Details', 1, 1, 1, 1, 1, 1, NULL, 3),
+(245, 37, 'active', 'checkbox', 'Active', 1, 1, 1, 1, 1, 1, NULL, 4),
+(246, 37, 'created_at', 'timestamp', 'Created At', 0, 1, 1, 1, 0, 1, NULL, 5),
+(247, 37, 'updated_at', 'timestamp', 'Updated At', 0, 0, 0, 0, 0, 0, NULL, 6),
+(248, 37, 'item_hasmany_item_price_relationship', 'relationship', 'item_prices', 0, 1, 1, 1, 1, 1, '{\"model\":\"App\\\\ItemPrice\",\"table\":\"item_prices\",\"type\":\"hasMany\",\"column\":\"item_id\",\"key\":\"id\",\"label\":\"price\",\"pivot_table\":\"categories\",\"pivot\":\"0\"}', 7),
+(249, 40, 'id', 'checkbox', 'Id', 1, 0, 0, 0, 0, 0, NULL, 1),
+(250, 40, 'name', 'text', 'Name', 1, 1, 1, 1, 1, 1, NULL, 2),
+(251, 40, 'created_at', 'timestamp', 'Created At', 0, 1, 1, 1, 0, 1, NULL, 3),
+(252, 40, 'updated_at', 'timestamp', 'Updated At', 0, 0, 0, 0, 0, 0, NULL, 4),
+(253, 41, 'id', 'checkbox', 'Id', 1, 0, 0, 0, 0, 0, NULL, 0),
+(254, 41, 'order_id', 'number', 'Order Id', 1, 1, 1, 1, 1, 1, NULL, 2),
+(255, 41, 'item_id', 'number', 'Item Id', 1, 1, 1, 1, 1, 1, NULL, 4),
+(256, 41, 'no_of_faces', 'number', 'No Of Faces', 1, 1, 1, 1, 1, 1, NULL, 6),
+(257, 41, 'face_price_id', 'number', 'Face Price Id', 1, 1, 1, 1, 1, 1, NULL, 7),
+(258, 41, 'discount_id', 'number', 'Discount Id', 1, 1, 1, 1, 1, 1, NULL, 9),
+(259, 41, 'created_at', 'timestamp', 'Created At', 0, 1, 1, 1, 0, 1, NULL, 11),
+(260, 41, 'updated_at', 'timestamp', 'Updated At', 0, 0, 0, 0, 0, 0, NULL, 12),
+(261, 41, 'order_item_belongsto_order_relationship', 'relationship', 'orders', 0, 1, 1, 1, 1, 1, '{\"model\":\"App\\\\Order\",\"table\":\"orders\",\"type\":\"belongsTo\",\"column\":\"order_id\",\"key\":\"id\",\"label\":\"id\",\"pivot_table\":\"categories\",\"pivot\":\"0\"}', 3),
+(262, 41, 'order_item_belongsto_item_relationship', 'relationship', 'items', 0, 1, 1, 1, 1, 1, '{\"model\":\"App\\\\Item\",\"table\":\"items\",\"type\":\"belongsTo\",\"column\":\"item_id\",\"key\":\"id\",\"label\":\"name\",\"pivot_table\":\"categories\",\"pivot\":\"0\"}', 5),
+(263, 41, 'order_item_belongsto_face_price_relationship', 'relationship', 'face_prices', 0, 1, 1, 1, 1, 1, '{\"model\":\"App\\\\FacePrice\",\"table\":\"face_prices\",\"type\":\"belongsTo\",\"column\":\"face_price_id\",\"key\":\"id\",\"label\":\"price\",\"pivot_table\":\"categories\",\"pivot\":\"0\"}', 8),
+(264, 41, 'order_item_belongsto_discount_relationship', 'relationship', 'discounts', 0, 1, 1, 1, 1, 1, '{\"model\":\"App\\\\Discount\",\"table\":\"discounts\",\"type\":\"belongsTo\",\"column\":\"discount_id\",\"key\":\"id\",\"label\":\"name\",\"pivot_table\":\"categories\",\"pivot\":\"0\"}', 10),
+(265, 42, 'id', 'checkbox', 'Id', 1, 0, 0, 0, 0, 0, NULL, 1),
+(266, 42, 'name', 'text', 'Name', 1, 1, 1, 1, 1, 1, NULL, 2),
+(267, 42, 'country_id', 'number', 'Country Id', 1, 1, 1, 1, 1, 1, NULL, 3),
+(268, 42, 'active', 'checkbox', 'Active', 1, 1, 1, 1, 1, 1, NULL, 4),
+(269, 42, 'created_at', 'timestamp', 'Created At', 0, 1, 1, 1, 0, 1, NULL, 5),
+(270, 42, 'updated_at', 'timestamp', 'Updated At', 0, 0, 0, 0, 0, 0, NULL, 6),
+(271, 42, 'store_location_belongsto_country_relationship', 'relationship', 'countries', 0, 1, 1, 1, 1, 1, '{\"model\":\"App\\\\Country\",\"table\":\"countries\",\"type\":\"belongsTo\",\"column\":\"country_id\",\"key\":\"id\",\"label\":\"name\",\"pivot_table\":\"categories\",\"pivot\":\"0\"}', 7),
+(272, 16, 'discount_id', 'number', 'Discount Id', 1, 1, 1, 1, 1, 1, NULL, 3),
+(273, 16, 'order_type_belongsto_discount_relationship', 'relationship', 'discounts', 0, 1, 1, 1, 1, 1, '{\"model\":\"App\\\\Discount\",\"table\":\"discounts\",\"type\":\"belongsTo\",\"column\":\"discount_id\",\"key\":\"id\",\"label\":\"name\",\"pivot_table\":\"categories\",\"pivot\":\"0\"}', 4),
+(274, 43, 'id', 'checkbox', 'Id', 1, 0, 0, 0, 0, 0, NULL, 0),
+(275, 43, 'order_id', 'number', 'Order Id', 1, 1, 1, 1, 1, 1, NULL, 2),
+(276, 43, 'name', 'text', 'Name', 1, 1, 1, 1, 1, 1, NULL, 3),
+(277, 43, 'full_path', 'text_area', 'Full Path', 1, 1, 1, 1, 1, 1, NULL, 4),
+(278, 43, 'created_at', 'timestamp', 'Created At', 0, 1, 1, 1, 0, 1, NULL, 5),
+(279, 43, 'updated_at', 'timestamp', 'Updated At', 0, 0, 0, 0, 0, 0, NULL, 6),
+(280, 43, 'order_psd_file_belongsto_order_relationship', 'relationship', 'orders', 0, 1, 1, 1, 1, 1, '{\"model\":\"App\\\\Order\",\"table\":\"orders\",\"type\":\"belongsTo\",\"column\":\"order_id\",\"key\":\"id\",\"label\":\"id\",\"pivot_table\":\"categories\",\"pivot\":\"0\"}', 7);
 
 -- --------------------------------------------------------
 
@@ -366,7 +390,7 @@ CREATE TABLE IF NOT EXISTS `data_types` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `data_types_name_unique` (`name`),
   UNIQUE KEY `data_types_slug_unique` (`slug`)
-) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=44 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC;
 
 --
 -- Dumping data for table `data_types`
@@ -386,21 +410,23 @@ INSERT INTO `data_types` (`id`, `name`, `slug`, `display_name_singular`, `displa
 (11, 'discounts', 'discounts', 'Discount', 'Discounts', NULL, 'App\\Discount', NULL, NULL, NULL, 1, 0, '2018-03-13 07:21:46', '2018-03-13 07:21:46'),
 (12, 'item_faces', 'item-faces', 'Item Face', 'Item Faces', NULL, 'App\\ItemFace', NULL, NULL, NULL, 1, 0, '2018-03-13 07:22:12', '2018-03-13 07:22:12'),
 (13, 'order_customer_images', 'order-customer-images', 'Order Customer Image', 'Order Customer Images', NULL, 'App\\OrderCustomerImage', NULL, NULL, NULL, 1, 0, '2018-03-13 07:23:36', '2018-03-13 07:23:36'),
-(14, 'order_items', 'order-items', 'Order Item', 'Order Items', NULL, 'App\\OrderItem', NULL, NULL, NULL, 1, 0, '2018-03-13 07:24:55', '2018-03-13 07:24:55'),
 (15, 'order_sample_images', 'order-sample-images', 'Order Sample Image', 'Order Sample Images', NULL, 'App\\OrderSampleImage', NULL, NULL, NULL, 1, 0, '2018-03-13 07:25:55', '2018-03-13 07:25:55'),
 (16, 'order_types', 'order-types', 'Order Type', 'Order Types', NULL, 'App\\OrderType', NULL, NULL, NULL, 1, 0, '2018-03-13 07:26:23', '2018-03-13 07:26:23'),
-(17, 'ordering_locations', 'ordering-locations', 'Ordering Location', 'Ordering Locations', NULL, 'App\\OrderingLocation', NULL, NULL, NULL, 1, 0, '2018-03-13 07:27:59', '2018-03-13 07:27:59'),
 (18, 'ordering_types', 'ordering-types', 'Ordering Type', 'Ordering Types', NULL, 'App\\OrderingType', NULL, NULL, NULL, 1, 0, '2018-03-13 07:37:49', '2018-03-13 07:37:49'),
 (19, 'orders', 'orders', 'Order', 'Orders', NULL, 'App\\Order', NULL, NULL, NULL, 1, 0, '2018-03-14 05:18:37', '2018-03-14 05:18:37'),
-(20, 'products', 'products', 'Product', 'Products', NULL, 'App\\Product', NULL, NULL, NULL, 1, 0, '2018-03-14 05:18:59', '2018-03-14 05:18:59'),
-(21, 'statuses', 'statuses', 'Status', 'Statuses', NULL, 'App\\Status', NULL, NULL, NULL, 1, 0, '2018-03-14 05:19:16', '2018-03-14 05:19:16'),
 (23, 'psd_files', 'psd-files', 'Psd File', 'Psd Files', NULL, 'App\\PsdFile', NULL, NULL, NULL, 1, 0, '2018-03-14 05:20:19', '2018-03-14 05:20:19'),
 (24, 'urgents', 'urgents', 'Urgent', 'Urgents', NULL, 'App\\Urgent', NULL, NULL, NULL, 1, 0, '2018-03-14 05:20:38', '2018-03-14 05:20:38'),
 (27, 'face_price', 'face-price', 'Face Price', 'Face Prices', NULL, 'App\\FacePrice', NULL, NULL, NULL, 1, 0, '2018-04-05 08:26:07', '2018-04-05 08:26:07'),
 (28, 'face_prices', 'face-prices', 'Face Price', 'Face Prices', NULL, 'App\\FacePrice', NULL, NULL, NULL, 1, 0, '2018-04-05 08:31:57', '2018-04-05 08:31:57'),
 (31, 'ordering_methods', 'ordering-methods', 'Ordering Method', 'Ordering Methods', NULL, 'App\\OrderingMethod', NULL, NULL, NULL, 1, 0, '2018-04-05 09:40:24', '2018-04-05 09:40:24'),
 (33, 'urgent_fee', 'urgent-fee', 'Urgent Fee', 'Urgent Fees', NULL, 'App\\UrgentFee', NULL, NULL, NULL, 1, 0, '2018-04-05 11:24:15', '2018-04-05 11:24:15'),
-(34, 'urgent_fees', 'urgent-fees', 'Urgent Fee', 'Urgent Fees', NULL, 'App\\UrgentFee', NULL, NULL, NULL, 1, 0, '2018-04-05 11:36:22', '2018-04-05 11:36:22');
+(34, 'urgent_fees', 'urgent-fees', 'Urgent Fee', 'Urgent Fees', NULL, 'App\\UrgentFee', NULL, NULL, NULL, 1, 0, '2018-04-05 11:36:22', '2018-04-05 11:36:22'),
+(36, 'item_prices', 'item-prices', 'Item Price', 'Item Prices', NULL, 'App\\ItemPrice', NULL, NULL, NULL, 1, 0, '2018-04-08 06:10:42', '2018-04-08 06:10:42'),
+(37, 'items', 'items', 'Item', 'Items', NULL, 'App\\Item', NULL, NULL, NULL, 1, 0, '2018-04-08 06:15:08', '2018-04-08 06:15:08'),
+(40, 'order_statuses', 'order-statuses', 'Order Status', 'Order Statuses', NULL, 'App\\OrderStatus', NULL, NULL, NULL, 1, 0, '2018-04-08 06:58:20', '2018-04-08 06:58:20'),
+(41, 'order_items', 'order-items', 'Order Item', 'Order Items', NULL, 'App\\OrderItem', NULL, NULL, NULL, 1, 0, '2018-04-08 08:24:17', '2018-04-08 08:24:17'),
+(42, 'store_locations', 'store-locations', 'Store Location', 'Store Locations', NULL, 'App\\StoreLocation', NULL, NULL, NULL, 1, 0, '2018-04-08 10:09:07', '2018-04-08 10:09:07'),
+(43, 'order_psd_files', 'order-psd-files', 'Order Psd File', 'Order Psd Files', NULL, 'App\\OrderPsdFile', NULL, NULL, NULL, 1, 0, '2018-04-08 11:17:49', '2018-04-08 11:17:49');
 
 -- --------------------------------------------------------
 
@@ -466,15 +492,18 @@ CREATE TABLE IF NOT EXISTS `discounts` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC;
 
 --
 -- Dumping data for table `discounts`
 --
 
 INSERT INTO `discounts` (`id`, `name`, `value`, `active`, `created_at`, `updated_at`) VALUES
-(1, '50%', 50, 1, '2018-04-05 08:15:53', '2018-04-05 08:15:53'),
-(2, '20%', 20, 1, '2018-04-05 08:16:04', '2018-04-05 08:16:04');
+(1, '0%', 0, 1, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(2, '25%', 25, 1, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(3, '50%', 50, 1, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(4, '75%', 75, 1, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(5, '100%', 100, 1, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -500,6 +529,61 @@ CREATE TABLE IF NOT EXISTS `face_prices` (
 INSERT INTO `face_prices` (`id`, `price`, `country_id`, `active`, `created_at`, `updated_at`) VALUES
 (2, 50, 1, 1, '2018-04-05 09:18:14', '2018-04-05 09:18:14'),
 (3, 100, 2, 1, '2018-04-05 09:18:25', '2018-04-05 09:18:25');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `items`
+--
+
+DROP TABLE IF EXISTS `items`;
+CREATE TABLE IF NOT EXISTS `items` (
+  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `details` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `active` tinyint(1) NOT NULL DEFAULT '1',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC;
+
+--
+-- Dumping data for table `items`
+--
+
+INSERT INTO `items` (`id`, `name`, `details`, `active`, `created_at`, `updated_at`) VALUES
+(1, 'A4 Maqutte', 'qweqwew', 1, '2018-04-08 06:19:01', '2018-04-08 06:19:01'),
+(2, 'A3 Maqutte', 'qweqwe', 1, '2018-04-08 06:19:15', '2018-04-08 06:19:15'),
+(3, 'A0 Maqutte', 'qwewq', 1, '2018-04-08 06:19:24', '2018-04-08 06:19:24'),
+(4, 'Medal Small', 'qwewq', 1, '2018-04-08 06:19:37', '2018-04-08 06:19:37'),
+(5, 'Medal Medium', 'asdasd', 1, '2018-04-08 06:19:47', '2018-04-08 06:19:47');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `item_prices`
+--
+
+DROP TABLE IF EXISTS `item_prices`;
+CREATE TABLE IF NOT EXISTS `item_prices` (
+  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `item_id` int(11) DEFAULT NULL,
+  `price` int(11) DEFAULT NULL,
+  `country_id` int(11) DEFAULT NULL,
+  `active` tinyint(4) DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `item_prices`
+--
+
+INSERT INTO `item_prices` (`id`, `item_id`, `price`, `country_id`, `active`, `created_at`, `updated_at`) VALUES
+(1, 1, 100, 1, 1, '2018-04-08 06:20:06', '2018-04-08 06:20:06'),
+(2, 2, 200, 1, 1, '2018-04-08 06:20:58', '2018-04-08 06:20:58'),
+(3, 3, 100, 2, 1, '2018-04-08 06:21:11', '2018-04-08 06:21:11');
 
 -- --------------------------------------------------------
 
@@ -547,7 +631,7 @@ CREATE TABLE IF NOT EXISTS `menu_items` (
   `parameters` text COLLATE utf8mb4_unicode_ci,
   PRIMARY KEY (`id`),
   KEY `menu_items_menu_id_foreign` (`menu_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=40 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC;
 
 --
 -- Dumping data for table `menu_items`
@@ -576,14 +660,15 @@ INSERT INTO `menu_items` (`id`, `menu_id`, `title`, `url`, `target`, `icon_class
 (21, 1, 'Order Items', '/admin/order-items', '_self', NULL, NULL, NULL, 18, '2018-03-13 07:24:56', '2018-04-05 12:15:00', NULL, NULL),
 (22, 1, 'Order Sample Images', '/admin/order-sample-images', '_self', NULL, NULL, NULL, 19, '2018-03-13 07:25:55', '2018-04-05 12:15:00', NULL, NULL),
 (23, 1, 'Order Types', '/admin/order-types', '_self', NULL, NULL, NULL, 20, '2018-03-13 07:26:24', '2018-04-05 12:15:00', NULL, NULL),
-(24, 1, 'Ordering Locations', '/admin/ordering-locations', '_self', NULL, NULL, NULL, 21, '2018-03-13 07:27:59', '2018-04-05 12:15:00', NULL, NULL),
 (25, 1, 'Ordering Methods', '/admin/ordering-methods', '_self', NULL, '#000000', NULL, 22, '2018-03-13 07:37:50', '2018-04-05 12:15:00', NULL, ''),
 (26, 1, 'Orders', '/admin/orders', '_self', NULL, NULL, NULL, 23, '2018-03-14 05:18:37', '2018-04-05 12:15:00', NULL, NULL),
-(27, 1, 'Products', '/admin/products', '_self', NULL, NULL, NULL, 24, '2018-03-14 05:18:59', '2018-04-05 12:15:00', NULL, NULL),
-(28, 1, 'Statuses', '/admin/statuses', '_self', NULL, NULL, NULL, 25, '2018-03-14 05:19:16', '2018-04-05 12:15:00', NULL, NULL),
-(29, 1, 'Psd Files', '/admin/psd-files', '_self', NULL, NULL, NULL, 26, '2018-03-14 05:20:19', '2018-04-05 12:15:00', NULL, NULL),
 (32, 1, 'Face Prices', '/admin/face-prices', '_self', NULL, NULL, NULL, 16, '2018-04-05 08:31:58', '2018-04-05 12:15:00', NULL, NULL),
-(34, 1, 'Urgent Fees', '/admin/urgent-fees', '_self', NULL, NULL, NULL, 15, '2018-04-05 11:36:22', '2018-04-05 12:15:00', NULL, NULL);
+(34, 1, 'Urgent Fees', '/admin/urgent-fees', '_self', NULL, NULL, NULL, 15, '2018-04-05 11:36:22', '2018-04-05 12:15:00', NULL, NULL),
+(35, 1, 'Items', '/admin/items', '_self', NULL, NULL, NULL, 27, '2018-04-08 06:00:31', '2018-04-08 06:00:31', NULL, NULL),
+(36, 1, 'Item Prices', '/admin/item-prices', '_self', NULL, NULL, NULL, 28, '2018-04-08 06:10:42', '2018-04-08 06:10:42', NULL, NULL),
+(37, 1, 'Order Statuses', '/admin/order-statuses', '_self', NULL, NULL, NULL, 29, '2018-04-08 06:58:20', '2018-04-08 06:58:20', NULL, NULL),
+(38, 1, 'Store Locations', '/admin/store-locations', '_self', NULL, NULL, NULL, 30, '2018-04-08 10:09:08', '2018-04-08 10:09:08', NULL, NULL),
+(39, 1, 'Order Psd Files', '/admin/order-psd-files', '_self', NULL, NULL, NULL, 31, '2018-04-08 11:17:49', '2018-04-08 11:17:49', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -649,23 +734,6 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ordering_locations`
---
-
-DROP TABLE IF EXISTS `ordering_locations`;
-CREATE TABLE IF NOT EXISTS `ordering_locations` (
-  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
-  `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `country_id` int(11) NOT NULL,
-  `active` tinyint(1) NOT NULL DEFAULT '1',
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC;
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `ordering_methods`
 --
 
@@ -684,7 +752,7 @@ CREATE TABLE IF NOT EXISTS `ordering_methods` (
 --
 
 INSERT INTO `ordering_methods` (`id`, `name`, `active`, `created_at`, `updated_at`) VALUES
-(1, 'Partion', 1, '2018-04-05 09:40:55', '2018-04-05 09:40:55'),
+(1, 'Local Store', 1, '2018-04-05 09:40:00', '2018-04-08 08:54:10'),
 (2, 'Facebook', 1, '2018-04-05 09:41:06', '2018-04-05 09:41:06'),
 (3, 'Whats App', 1, '2018-04-05 09:41:00', '2018-04-05 09:41:23');
 
@@ -761,9 +829,27 @@ DROP TABLE IF EXISTS `order_items`;
 CREATE TABLE IF NOT EXISTS `order_items` (
   `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
   `order_id` int(11) NOT NULL,
-  `product_id` int(11) NOT NULL,
-  `face_id` int(11) NOT NULL,
+  `item_id` int(11) NOT NULL,
+  `no_of_faces` int(11) NOT NULL,
+  `face_price_id` int(11) NOT NULL,
   `discount_id` int(11) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `order_psd_files`
+--
+
+DROP TABLE IF EXISTS `order_psd_files`;
+CREATE TABLE IF NOT EXISTS `order_psd_files` (
+  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `order_id` int(11) NOT NULL,
+  `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `full_path` text COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
@@ -789,6 +875,34 @@ CREATE TABLE IF NOT EXISTS `order_sample_images` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `order_statuses`
+--
+
+DROP TABLE IF EXISTS `order_statuses`;
+CREATE TABLE IF NOT EXISTS `order_statuses` (
+  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC;
+
+--
+-- Dumping data for table `order_statuses`
+--
+
+INSERT INTO `order_statuses` (`id`, `name`, `created_at`, `updated_at`) VALUES
+(1, 'Recived', '2018-04-08 07:04:34', '2018-04-08 07:04:34'),
+(2, 'Designing', '2018-04-08 07:04:42', '2018-04-08 07:04:42'),
+(3, 'Waiting Confirm', '2018-04-08 07:05:12', '2018-04-08 07:05:12'),
+(4, 'Re-Designing', '2018-04-08 07:05:23', '2018-04-08 07:05:23'),
+(5, 'Confirmed', '2018-04-08 07:05:34', '2018-04-08 07:05:34'),
+(6, 'Printing', '2018-04-08 07:05:46', '2018-04-08 07:05:46'),
+(7, 'finished Prionting', '2018-04-08 07:05:55', '2018-04-08 07:05:55');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `order_types`
 --
 
@@ -796,6 +910,7 @@ DROP TABLE IF EXISTS `order_types`;
 CREATE TABLE IF NOT EXISTS `order_types` (
   `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
   `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `discount_id` int(11) NOT NULL,
   `active` tinyint(1) NOT NULL DEFAULT '1',
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
@@ -806,10 +921,10 @@ CREATE TABLE IF NOT EXISTS `order_types` (
 -- Dumping data for table `order_types`
 --
 
-INSERT INTO `order_types` (`id`, `name`, `active`, `created_at`, `updated_at`) VALUES
-(1, 'Normal Order', 1, '2018-04-05 12:45:37', '2018-04-05 12:45:37'),
-(2, 'Co-Worker', 1, '2018-04-05 12:45:50', '2018-04-05 12:45:50'),
-(3, 'Sample', 1, '2018-04-05 12:46:00', '2018-04-05 12:46:00');
+INSERT INTO `order_types` (`id`, `name`, `discount_id`, `active`, `created_at`, `updated_at`) VALUES
+(1, 'Normal Order', 1, 1, '2018-04-05 12:45:00', '2018-04-08 10:42:54'),
+(2, 'Co-Worker', 3, 1, '2018-04-05 12:45:00', '2018-04-08 10:42:46'),
+(3, 'Sample', 5, 1, '2018-04-05 12:46:00', '2018-04-08 10:42:34');
 
 -- --------------------------------------------------------
 
@@ -865,7 +980,7 @@ CREATE TABLE IF NOT EXISTS `permissions` (
   `permission_group_id` int(10) UNSIGNED DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `permissions_key_index` (`key`)
-) ENGINE=InnoDB AUTO_INCREMENT=151 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=186 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC;
 
 --
 -- Dumping data for table `permissions`
@@ -947,11 +1062,6 @@ INSERT INTO `permissions` (`id`, `key`, `table_name`, `created_at`, `updated_at`
 (73, 'edit_order_customer_images', 'order_customer_images', '2018-03-13 07:23:36', '2018-03-13 07:23:36', NULL),
 (74, 'add_order_customer_images', 'order_customer_images', '2018-03-13 07:23:36', '2018-03-13 07:23:36', NULL),
 (75, 'delete_order_customer_images', 'order_customer_images', '2018-03-13 07:23:36', '2018-03-13 07:23:36', NULL),
-(76, 'browse_order_items', 'order_items', '2018-03-13 07:24:56', '2018-03-13 07:24:56', NULL),
-(77, 'read_order_items', 'order_items', '2018-03-13 07:24:56', '2018-03-13 07:24:56', NULL),
-(78, 'edit_order_items', 'order_items', '2018-03-13 07:24:56', '2018-03-13 07:24:56', NULL),
-(79, 'add_order_items', 'order_items', '2018-03-13 07:24:56', '2018-03-13 07:24:56', NULL),
-(80, 'delete_order_items', 'order_items', '2018-03-13 07:24:56', '2018-03-13 07:24:56', NULL),
 (81, 'browse_order_sample_images', 'order_sample_images', '2018-03-13 07:25:55', '2018-03-13 07:25:55', NULL),
 (82, 'read_order_sample_images', 'order_sample_images', '2018-03-13 07:25:55', '2018-03-13 07:25:55', NULL),
 (83, 'edit_order_sample_images', 'order_sample_images', '2018-03-13 07:25:55', '2018-03-13 07:25:55', NULL),
@@ -962,11 +1072,6 @@ INSERT INTO `permissions` (`id`, `key`, `table_name`, `created_at`, `updated_at`
 (88, 'edit_order_types', 'order_types', '2018-03-13 07:26:24', '2018-03-13 07:26:24', NULL),
 (89, 'add_order_types', 'order_types', '2018-03-13 07:26:24', '2018-03-13 07:26:24', NULL),
 (90, 'delete_order_types', 'order_types', '2018-03-13 07:26:24', '2018-03-13 07:26:24', NULL),
-(91, 'browse_ordering_locations', 'ordering_locations', '2018-03-13 07:27:59', '2018-03-13 07:27:59', NULL),
-(92, 'read_ordering_locations', 'ordering_locations', '2018-03-13 07:27:59', '2018-03-13 07:27:59', NULL),
-(93, 'edit_ordering_locations', 'ordering_locations', '2018-03-13 07:27:59', '2018-03-13 07:27:59', NULL),
-(94, 'add_ordering_locations', 'ordering_locations', '2018-03-13 07:27:59', '2018-03-13 07:27:59', NULL),
-(95, 'delete_ordering_locations', 'ordering_locations', '2018-03-13 07:27:59', '2018-03-13 07:27:59', NULL),
 (96, 'browse_ordering_types', 'ordering_types', '2018-03-13 07:37:49', '2018-03-13 07:37:49', NULL),
 (97, 'read_ordering_types', 'ordering_types', '2018-03-13 07:37:49', '2018-03-13 07:37:49', NULL),
 (98, 'edit_ordering_types', 'ordering_types', '2018-03-13 07:37:49', '2018-03-13 07:37:49', NULL),
@@ -977,16 +1082,6 @@ INSERT INTO `permissions` (`id`, `key`, `table_name`, `created_at`, `updated_at`
 (103, 'edit_orders', 'orders', '2018-03-14 05:18:37', '2018-03-14 05:18:37', NULL),
 (104, 'add_orders', 'orders', '2018-03-14 05:18:37', '2018-03-14 05:18:37', NULL),
 (105, 'delete_orders', 'orders', '2018-03-14 05:18:37', '2018-03-14 05:18:37', NULL),
-(106, 'browse_products', 'products', '2018-03-14 05:18:59', '2018-03-14 05:18:59', NULL),
-(107, 'read_products', 'products', '2018-03-14 05:18:59', '2018-03-14 05:18:59', NULL),
-(108, 'edit_products', 'products', '2018-03-14 05:18:59', '2018-03-14 05:18:59', NULL),
-(109, 'add_products', 'products', '2018-03-14 05:18:59', '2018-03-14 05:18:59', NULL),
-(110, 'delete_products', 'products', '2018-03-14 05:18:59', '2018-03-14 05:18:59', NULL),
-(111, 'browse_statuses', 'statuses', '2018-03-14 05:19:16', '2018-03-14 05:19:16', NULL),
-(112, 'read_statuses', 'statuses', '2018-03-14 05:19:16', '2018-03-14 05:19:16', NULL),
-(113, 'edit_statuses', 'statuses', '2018-03-14 05:19:16', '2018-03-14 05:19:16', NULL),
-(114, 'add_statuses', 'statuses', '2018-03-14 05:19:16', '2018-03-14 05:19:16', NULL),
-(115, 'delete_statuses', 'statuses', '2018-03-14 05:19:16', '2018-03-14 05:19:16', NULL),
 (116, 'browse_psd_files', 'psd_files', '2018-03-14 05:20:19', '2018-03-14 05:20:19', NULL),
 (117, 'read_psd_files', 'psd_files', '2018-03-14 05:20:19', '2018-03-14 05:20:19', NULL),
 (118, 'edit_psd_files', 'psd_files', '2018-03-14 05:20:19', '2018-03-14 05:20:19', NULL),
@@ -1021,7 +1116,37 @@ INSERT INTO `permissions` (`id`, `key`, `table_name`, `created_at`, `updated_at`
 (147, 'read_urgent_fees', 'urgent_fees', '2018-04-05 11:36:22', '2018-04-05 11:36:22', NULL),
 (148, 'edit_urgent_fees', 'urgent_fees', '2018-04-05 11:36:22', '2018-04-05 11:36:22', NULL),
 (149, 'add_urgent_fees', 'urgent_fees', '2018-04-05 11:36:22', '2018-04-05 11:36:22', NULL),
-(150, 'delete_urgent_fees', 'urgent_fees', '2018-04-05 11:36:22', '2018-04-05 11:36:22', NULL);
+(150, 'delete_urgent_fees', 'urgent_fees', '2018-04-05 11:36:22', '2018-04-05 11:36:22', NULL),
+(156, 'browse_item_prices', 'item_prices', '2018-04-08 06:10:42', '2018-04-08 06:10:42', NULL),
+(157, 'read_item_prices', 'item_prices', '2018-04-08 06:10:42', '2018-04-08 06:10:42', NULL),
+(158, 'edit_item_prices', 'item_prices', '2018-04-08 06:10:42', '2018-04-08 06:10:42', NULL),
+(159, 'add_item_prices', 'item_prices', '2018-04-08 06:10:42', '2018-04-08 06:10:42', NULL),
+(160, 'delete_item_prices', 'item_prices', '2018-04-08 06:10:42', '2018-04-08 06:10:42', NULL),
+(161, 'browse_items', 'items', '2018-04-08 06:15:08', '2018-04-08 06:15:08', NULL),
+(162, 'read_items', 'items', '2018-04-08 06:15:08', '2018-04-08 06:15:08', NULL),
+(163, 'edit_items', 'items', '2018-04-08 06:15:08', '2018-04-08 06:15:08', NULL),
+(164, 'add_items', 'items', '2018-04-08 06:15:08', '2018-04-08 06:15:08', NULL),
+(165, 'delete_items', 'items', '2018-04-08 06:15:08', '2018-04-08 06:15:08', NULL),
+(166, 'browse_order_statuses', 'order_statuses', '2018-04-08 06:58:20', '2018-04-08 06:58:20', NULL),
+(167, 'read_order_statuses', 'order_statuses', '2018-04-08 06:58:20', '2018-04-08 06:58:20', NULL),
+(168, 'edit_order_statuses', 'order_statuses', '2018-04-08 06:58:20', '2018-04-08 06:58:20', NULL),
+(169, 'add_order_statuses', 'order_statuses', '2018-04-08 06:58:20', '2018-04-08 06:58:20', NULL),
+(170, 'delete_order_statuses', 'order_statuses', '2018-04-08 06:58:20', '2018-04-08 06:58:20', NULL),
+(171, 'browse_order_items', 'order_items', '2018-04-08 08:24:17', '2018-04-08 08:24:17', NULL),
+(172, 'read_order_items', 'order_items', '2018-04-08 08:24:17', '2018-04-08 08:24:17', NULL),
+(173, 'edit_order_items', 'order_items', '2018-04-08 08:24:17', '2018-04-08 08:24:17', NULL),
+(174, 'add_order_items', 'order_items', '2018-04-08 08:24:17', '2018-04-08 08:24:17', NULL),
+(175, 'delete_order_items', 'order_items', '2018-04-08 08:24:17', '2018-04-08 08:24:17', NULL),
+(176, 'browse_store_locations', 'store_locations', '2018-04-08 10:09:08', '2018-04-08 10:09:08', NULL),
+(177, 'read_store_locations', 'store_locations', '2018-04-08 10:09:08', '2018-04-08 10:09:08', NULL),
+(178, 'edit_store_locations', 'store_locations', '2018-04-08 10:09:08', '2018-04-08 10:09:08', NULL),
+(179, 'add_store_locations', 'store_locations', '2018-04-08 10:09:08', '2018-04-08 10:09:08', NULL),
+(180, 'delete_store_locations', 'store_locations', '2018-04-08 10:09:08', '2018-04-08 10:09:08', NULL),
+(181, 'browse_order_psd_files', 'order_psd_files', '2018-04-08 11:17:49', '2018-04-08 11:17:49', NULL),
+(182, 'read_order_psd_files', 'order_psd_files', '2018-04-08 11:17:49', '2018-04-08 11:17:49', NULL),
+(183, 'edit_order_psd_files', 'order_psd_files', '2018-04-08 11:17:49', '2018-04-08 11:17:49', NULL),
+(184, 'add_order_psd_files', 'order_psd_files', '2018-04-08 11:17:49', '2018-04-08 11:17:49', NULL),
+(185, 'delete_order_psd_files', 'order_psd_files', '2018-04-08 11:17:49', '2018-04-08 11:17:49', NULL);
 
 -- --------------------------------------------------------
 
@@ -1132,11 +1257,6 @@ INSERT INTO `permission_role` (`permission_id`, `role_id`) VALUES
 (73, 1),
 (74, 1),
 (75, 1),
-(76, 1),
-(77, 1),
-(78, 1),
-(79, 1),
-(80, 1),
 (81, 1),
 (82, 1),
 (83, 1),
@@ -1147,11 +1267,6 @@ INSERT INTO `permission_role` (`permission_id`, `role_id`) VALUES
 (88, 1),
 (89, 1),
 (90, 1),
-(91, 1),
-(92, 1),
-(93, 1),
-(94, 1),
-(95, 1),
 (96, 1),
 (97, 1),
 (98, 1),
@@ -1162,16 +1277,6 @@ INSERT INTO `permission_role` (`permission_id`, `role_id`) VALUES
 (103, 1),
 (104, 1),
 (105, 1),
-(106, 1),
-(107, 1),
-(108, 1),
-(109, 1),
-(110, 1),
-(111, 1),
-(112, 1),
-(113, 1),
-(114, 1),
-(115, 1),
 (116, 1),
 (117, 1),
 (118, 1),
@@ -1206,7 +1311,37 @@ INSERT INTO `permission_role` (`permission_id`, `role_id`) VALUES
 (147, 1),
 (148, 1),
 (149, 1),
-(150, 1);
+(150, 1),
+(156, 1),
+(157, 1),
+(158, 1),
+(159, 1),
+(160, 1),
+(161, 1),
+(162, 1),
+(163, 1),
+(164, 1),
+(165, 1),
+(166, 1),
+(167, 1),
+(168, 1),
+(169, 1),
+(170, 1),
+(171, 1),
+(172, 1),
+(173, 1),
+(174, 1),
+(175, 1),
+(176, 1),
+(177, 1),
+(178, 1),
+(179, 1),
+(180, 1),
+(181, 1),
+(182, 1),
+(183, 1),
+(184, 1),
+(185, 1);
 
 -- --------------------------------------------------------
 
@@ -1233,41 +1368,6 @@ CREATE TABLE IF NOT EXISTS `posts` (
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `posts_slug_unique` (`slug`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `products`
---
-
-DROP TABLE IF EXISTS `products`;
-CREATE TABLE IF NOT EXISTS `products` (
-  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
-  `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `details` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `price` int(11) NOT NULL,
-  `active` tinyint(1) NOT NULL DEFAULT '1',
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `psd_files`
---
-
-DROP TABLE IF EXISTS `psd_files`;
-CREATE TABLE IF NOT EXISTS `psd_files` (
-  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
-  `order_id` int(11) NOT NULL,
-  `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `full_path` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL,
-  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC;
 
 -- --------------------------------------------------------
@@ -1334,17 +1434,28 @@ INSERT INTO `settings` (`id`, `key`, `display_name`, `value`, `details`, `type`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `statuses`
+-- Table structure for table `store_locations`
 --
 
-DROP TABLE IF EXISTS `statuses`;
-CREATE TABLE IF NOT EXISTS `statuses` (
+DROP TABLE IF EXISTS `store_locations`;
+CREATE TABLE IF NOT EXISTS `store_locations` (
   `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
   `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `country_id` int(11) NOT NULL,
+  `active` tinyint(1) NOT NULL DEFAULT '1',
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC;
+
+--
+-- Dumping data for table `store_locations`
+--
+
+INSERT INTO `store_locations` (`id`, `name`, `country_id`, `active`, `created_at`, `updated_at`) VALUES
+(1, 'Rehab Mall 2', 1, 1, '2018-04-08 10:12:07', '2018-04-08 10:12:07'),
+(2, 'District Mall', 1, 1, '2018-04-08 10:12:18', '2018-04-08 10:12:18'),
+(3, 'Dubai Mall', 2, 1, '2018-04-08 10:12:32', '2018-04-08 10:12:32');
 
 -- --------------------------------------------------------
 
@@ -1381,14 +1492,15 @@ CREATE TABLE IF NOT EXISTS `urgent_fees` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC;
 
 --
 -- Dumping data for table `urgent_fees`
 --
 
 INSERT INTO `urgent_fees` (`id`, `price`, `country_id`, `active`, `created_at`, `updated_at`) VALUES
-(3, 50.00, 1, 1, '2018-04-05 12:15:22', '2018-04-05 12:15:22');
+(3, 50.00, 1, 1, '2018-04-05 12:15:22', '2018-04-05 12:15:22'),
+(4, 30.00, 2, 1, '2018-04-08 05:52:00', '2018-04-08 05:55:22');
 
 -- --------------------------------------------------------
 
