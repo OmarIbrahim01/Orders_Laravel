@@ -12,12 +12,27 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/orders');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+//////////////////////////////////////
+////////////////Orders///////////////
+
+//Dashboard
+Route::get('/orders', [
+    'as' => 'orders.dashboard',
+    'uses' => 'DashboardController@index'
+]);
+
+
+
+
+
 
 
 Route::group(['prefix' => 'admin'], function () {
