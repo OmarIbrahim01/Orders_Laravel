@@ -64,8 +64,8 @@
 
                   <li><a><i class="fa fa-home"></i> Orders <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="index.html">Add New</a></li>
-                      <li><a href="index2.html">All Orders</a></li>
+                      <li><a href="/orders/orders/create">Add New</a></li>
+                      <li><a href="/orders/orders">All Orders</a></li>
                     </ul>
                   </li>
                   

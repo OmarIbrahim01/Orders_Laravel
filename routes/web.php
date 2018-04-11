@@ -23,7 +23,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 //////////////////////////////////////
 ////////////////Orders///////////////
 
-//Dashboard
+/////////Dashboard////////////
 Route::get('/orders', [
     'as' => 'orders.dashboard',
     'uses' => 'DashboardController@index'
@@ -31,6 +31,17 @@ Route::get('/orders', [
 
 
 
+
+////////Orders/////////////
+Route::get('/orders/orders', [
+    'as' => 'orders.orders.index',
+    'uses' => 'OrdersController@index'
+]);
+
+Route::get('/orders/orders/{id}', [
+    'as' => 'orders.orders.show',
+    'uses' => 'OrdersController@show'
+]);
 
 
 
