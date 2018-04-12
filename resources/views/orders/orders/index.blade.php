@@ -29,7 +29,7 @@
       <div class="col-md-12">
         <div class="x_panel">
           <div class="x_content">
-            <div class="row">
+            <div class="row" style="margin-right: 60px; margin-left: 60px;">
               <div class="col-md-12 col-sm-12 col-xs-12 text-center">
                 <ul class="pagination pagination-split">
                   <li><a href="#">A</a></li>
@@ -49,39 +49,50 @@
 
 
               @foreach($orders as $order)
-              <div class="col-md-3 col-sm-3 col-xs-12 profile_details">
+              <div class="col-md-3 col-sm-3 col-xs-12 profile_details" >
                 <div class="well profile_view">
                   <div class="col-sm-12">
-                    <h4 class="brief"><i>Status: <span class="label label-success"><i class="fa fa-paper-plane"></i> Recived</span></i> <span><img src="/img/egypt_flag.png" width="30" style="float: right; margin-right: 5px;"></span></h4>
-                    <div class="left col-xs-7">
-                      <h2>Omar Ibrahim</h2>
+                    <h4 class="brief"><i>Status: <span class="label label-success"><i class="fa fa-paper-plane"></i> {{$order->order_status->name}}</span></i> <span><img src="/img/egypt_flag.png" width="30" style="float: right; margin-right: 5px;"></span></h4>
+                    <div class="right col-xs-12 text-center">
+                      <a href="#"><img class="img img-responsive" src="/images/img.jpg" alt=""  height="310" style="min-height: 310px;"></a>
+                    </div>
+                    <div class="left col-xs-12">
+                      <h2><strong>Code: </strong>{{$order->id}}</h2>
                       <h2>Date: 2/12/2018</h2>
                       <p><strong>Designer: </strong> Bassem Zakaria </p>
                       <ul class="list-unstyled">
                         <li><strong>Customer: </strong> Ahmed Mahmoud</li>
+                        <li><strong>Vendor: </strong> {{$order->added_by_user->name}}</li>
                       </ul>
-                      <p><strong>Remaining: </strong> 2 Days </p>
-                      <h2 style="float: left;     margin-bottom: 17px;"><span class="label label-danger"><i class="fa fa-paper-plane"></i> Urgent</span></h2>
+                      
+                      <h2 style="float: left; margin-bottom: 17px;">
+                        <span class="label label-danger">
+                          <i class="fa fa-paper-plane">
+                          </i> Urgent
+                        </span>
+                      </h2>
+
+                      <h2 style="float: left; margin-bottom: 17px;">
+                        <span class="label label-primary">
+                          <i class="fa fa-modx">
+                          </i> Sample
+                        </span>
+                      </h2>
+
                     </div>
-                    <div class="right col-xs-5 text-center">
-                      <img src="/images/img.jpg" alt="" class="img-circle img-responsive">
-                    </div>
+                    
                   </div>
                   <div class="col-xs-12 bottom text-center">
                     <div class="col-xs-12 col-sm-6 emphasis">
                       <p class="ratings">
-                        <a>4.0</a>
-                        <a href="#"><span class="fa fa-star"></span></a>
-                        <a href="#"><span class="fa fa-star"></span></a>
-                        <a href="#"><span class="fa fa-star"></span></a>
-                        <a href="#"><span class="fa fa-star"></span></a>
-                        <a href="#"><span class="fa fa-star-o"></span></a>
+                
+                        <a href="#" style="color: orange;"><span class="fa fa-bell"></span></a>
+                        <a href="#" style="color: orange;"><span class="fa fa-comment"></span></a>
+                        
                       </p>
                     </div>
                     <div class="col-xs-12 col-sm-6 emphasis">
-                      <button type="button" class="btn btn-primary btn-xs">
-                        <i class="fa fa-user"> </i> View Order
-                      </button>
+                      <p><strong>Remaining: </strong> 2 Days </p>
                     </div>
                   </div>
                 </div>

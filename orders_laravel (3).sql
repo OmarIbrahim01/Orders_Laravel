@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Apr 11, 2018 at 12:51 PM
+-- Generation Time: Apr 12, 2018 at 02:59 PM
 -- Server version: 5.7.19
 -- PHP Version: 7.1.9
 
@@ -814,16 +814,29 @@ CREATE TABLE IF NOT EXISTS `orders` (
   `sales_note` text COLLATE utf8mb4_unicode_ci,
   `sales_note_by` int(11) DEFAULT NULL,
   `sales_note_date` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `first_designer` int(11) DEFAULT NULL,
+  `second_designer` int(11) DEFAULT NULL,
   `active` tinyint(1) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC;
 
 --
 -- Dumping data for table `orders`
 --
 
-INSERT INTO `orders` (`id`, `customer_id`, `serial`, `country_id`, `work_place_id`, `urgent_fee_id`, `discount_id`, `down_payment`, `tag`, `order_status_id`, `order_status_updated_at`, `order_status_updated_by`, `order_type_id`, `created_at`, `updated_at`, `added_by`, `ordering_method_id`, `delivery_type_id`, `delivery_date`, `delivery_area_id`, `delivery_address`, `general_note`, `general_note_by`, `general_note_Date`, `admin_note`, `admin_note_by`, `admin_note_date`, `designer_note`, `designer_note_by`, `designer_note_date`, `sales_note`, `sales_note_by`, `sales_note_date`, `active`) VALUES
-(1, 1, 0, 1, 1, 4, 1, 0.00, '0', 1, '1970-01-01 00:00:00', 0, 1, '2018-04-11 07:31:30', '2018-04-11 07:31:30', 1, 1, 1, '2018-05-11 00:00:00', 1, 'qweqw', '<p>qweqwe</p>', 1, NULL, '<p>qweqwe</p>', 0, NULL, '<p>0</p>', 0, NULL, '<p>0</p>', 0, NULL, 1);
+INSERT INTO `orders` (`id`, `customer_id`, `serial`, `country_id`, `work_place_id`, `urgent_fee_id`, `discount_id`, `down_payment`, `tag`, `order_status_id`, `order_status_updated_at`, `order_status_updated_by`, `order_type_id`, `created_at`, `updated_at`, `added_by`, `ordering_method_id`, `delivery_type_id`, `delivery_date`, `delivery_area_id`, `delivery_address`, `general_note`, `general_note_by`, `general_note_Date`, `admin_note`, `admin_note_by`, `admin_note_date`, `designer_note`, `designer_note_by`, `designer_note_date`, `sales_note`, `sales_note_by`, `sales_note_date`, `first_designer`, `second_designer`, `active`) VALUES
+(1, 1, 0, 1, 1, 4, 1, 0.00, '0', 1, '1970-01-01 00:00:00', 0, 1, '2018-04-11 07:31:30', '2018-04-11 07:31:30', 1, 1, 1, '2018-05-11 00:00:00', 1, 'qweqw', '<p>qweqwe</p>', 1, NULL, '<p>qweqwe</p>', 0, NULL, '<p>0</p>', 0, NULL, '<p>0</p>', 0, NULL, 1, 1, 1),
+(2, 1, 0, 1, 1, 4, 1, 0.00, '0', 1, '1970-01-01 00:00:00', 0, 1, '2018-04-11 07:31:30', '2018-04-11 07:31:30', 1, 1, 1, '2018-05-11 00:00:00', 1, 'qweqw', '<p>qweqwe</p>', 1, NULL, '<p>qweqwe</p>', 0, NULL, '<p>0</p>', 0, NULL, '<p>0</p>', 0, NULL, 1, 1, 1),
+(3, 1, 0, 1, 1, 4, 1, 0.00, '0', 1, '1970-01-01 00:00:00', 0, 1, '2018-04-11 07:31:30', '2018-04-11 07:31:30', 1, 1, 1, '2018-05-11 00:00:00', 1, 'qweqw', '<p>qweqwe</p>', 1, NULL, '<p>qweqwe</p>', 0, NULL, '<p>0</p>', 0, NULL, '<p>0</p>', 0, NULL, 1, 1, 1),
+(4, 1, 0, 1, 1, 4, 1, 0.00, '0', 1, '1970-01-01 00:00:00', 0, 1, '2018-04-11 07:31:30', '2018-04-11 07:31:30', 1, 1, 1, '2018-05-11 00:00:00', 1, 'qweqw', '<p>qweqwe</p>', 1, NULL, '<p>qweqwe</p>', 0, NULL, '<p>0</p>', 0, NULL, '<p>0</p>', 0, NULL, 1, 1, 1),
+(5, 1, 0, 1, 1, 4, 1, 0.00, '0', 1, '1970-01-01 00:00:00', 0, 1, '2018-04-11 07:31:30', '2018-04-11 07:31:30', 1, 1, 1, '2018-05-11 00:00:00', 1, 'qweqw', '<p>qweqwe</p>', 1, NULL, '<p>qweqwe</p>', 0, NULL, '<p>0</p>', 0, NULL, '<p>0</p>', 0, NULL, 1, 1, 1),
+(6, 1, 0, 1, 1, 4, 1, 0.00, '0', 1, '1970-01-01 00:00:00', 0, 1, '2018-04-11 07:31:30', '2018-04-11 07:31:30', 1, 1, 1, '2018-05-11 00:00:00', 1, 'qweqw', '<p>qweqwe</p>', 1, NULL, '<p>qweqwe</p>', 0, NULL, '<p>0</p>', 0, NULL, '<p>0</p>', 0, NULL, 1, 1, 1),
+(7, 1, 0, 1, 1, 4, 1, 0.00, '0', 1, '1970-01-01 00:00:00', 0, 1, '2018-04-11 07:31:30', '2018-04-11 07:31:30', 1, 1, 1, '2018-05-11 00:00:00', 1, 'qweqw', '<p>qweqwe</p>', 1, NULL, '<p>qweqwe</p>', 0, NULL, '<p>0</p>', 0, NULL, '<p>0</p>', 0, NULL, 1, 1, 1),
+(8, 1, 0, 1, 1, 4, 1, 0.00, '0', 1, '1970-01-01 00:00:00', 0, 1, '2018-04-11 07:31:30', '2018-04-11 07:31:30', 1, 1, 1, '2018-05-11 00:00:00', 1, 'qweqw', '<p>qweqwe</p>', 1, NULL, '<p>qweqwe</p>', 0, NULL, '<p>0</p>', 0, NULL, '<p>0</p>', 0, NULL, 1, 1, 1),
+(9, 1, 0, 1, 1, 4, 1, 0.00, '0', 1, '1970-01-01 00:00:00', 0, 1, '2018-04-11 07:31:30', '2018-04-11 07:31:30', 1, 1, 1, '2018-05-11 00:00:00', 1, 'qweqw', '<p>qweqwe</p>', 1, NULL, '<p>qweqwe</p>', 0, NULL, '<p>0</p>', 0, NULL, '<p>0</p>', 0, NULL, 1, 1, 1),
+(10, 1, 0, 1, 1, 4, 1, 0.00, '0', 1, '1970-01-01 00:00:00', 0, 1, '2018-04-11 07:31:30', '2018-04-11 07:31:30', 1, 1, 1, '2018-05-11 00:00:00', 1, 'qweqw', '<p>qweqwe</p>', 1, NULL, '<p>qweqwe</p>', 0, NULL, '<p>0</p>', 0, NULL, '<p>0</p>', 0, NULL, 1, 1, 1),
+(11, 1, 0, 1, 1, 4, 1, 0.00, '0', 1, '1970-01-01 00:00:00', 0, 1, '2018-04-11 07:31:30', '2018-04-11 07:31:30', 1, 1, 1, '2018-05-11 00:00:00', 1, 'qweqw', '<p>qweqwe</p>', 1, NULL, '<p>qweqwe</p>', 0, NULL, '<p>0</p>', 0, NULL, '<p>0</p>', 0, NULL, 1, 1, 1),
+(12, 1, 0, 1, 1, 4, 1, 0.00, '0', 1, '1970-01-01 00:00:00', 0, 1, '2018-04-11 07:31:30', '2018-04-11 07:31:30', 1, 1, 1, '2018-05-11 00:00:00', 1, 'qweqw', '<p>qweqwe</p>', 1, NULL, '<p>qweqwe</p>', 0, NULL, '<p>0</p>', 0, NULL, '<p>0</p>', 0, NULL, 1, 1, 1);
 
 -- --------------------------------------------------------
 
