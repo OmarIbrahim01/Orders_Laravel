@@ -3,9 +3,13 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Carbon\Carbon;
 
 class Order extends Model
 {
+
+
+    // Realation Ships
     public function customer()
     {
     	return $this->belongsTo('App\Customer');
@@ -63,11 +67,33 @@ class Order extends Model
 
     public function first_designer()
     {
-    	return $this->belongsTo('App\User', 'first_designer');
+    	return $this->belongsTo('App\User', 'designer_first');
     }
 
     public function second_designer()
     {
-    	return $this->belongsTo('App\User', 'second_designer');
+    	return $this->belongsTo('App\User', 'designer_second');
     }
+
+
+
+
+
+
+
+
+    public function delivery_in_days()
+    {
+        // return Carbon::createFromFormat('Y-m-d h:i:s', $this->delivery_date)->diffInDays(now(), false);
+        return now()->diffInDays(Carbon::createFromFormat('Y-m-d h:i:s', $this->delivery_date), false);
+    }
+
+
+
+
+
+
+
+
+
 }

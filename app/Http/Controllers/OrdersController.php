@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Order;
+use Carbon\Carbon;
 
 class OrdersController extends Controller
 {
@@ -16,6 +17,13 @@ class OrdersController extends Controller
     {
         $orders = Order::all();
         return view('orders.orders.index', ['orders' => $orders]);
+
+        // $order = Order::findOrFail(1);
+
+
+        // $delivery_in_days = Carbon::createFromFormat('Y-m-d h:i:s', $order->delivery_date)->diffInDays(now());
+
+        // return $delivery_date;
     }
 
     /**

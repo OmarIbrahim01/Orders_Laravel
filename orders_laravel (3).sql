@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Apr 12, 2018 at 02:59 PM
+-- Generation Time: Apr 15, 2018 at 02:56 PM
 -- Server version: 5.7.19
 -- PHP Version: 7.1.9
 
@@ -814,8 +814,8 @@ CREATE TABLE IF NOT EXISTS `orders` (
   `sales_note` text COLLATE utf8mb4_unicode_ci,
   `sales_note_by` int(11) DEFAULT NULL,
   `sales_note_date` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `first_designer` int(11) DEFAULT NULL,
-  `second_designer` int(11) DEFAULT NULL,
+  `designer_first` int(11) DEFAULT NULL,
+  `designer_second` int(11) DEFAULT NULL,
   `active` tinyint(1) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC;
@@ -824,19 +824,19 @@ CREATE TABLE IF NOT EXISTS `orders` (
 -- Dumping data for table `orders`
 --
 
-INSERT INTO `orders` (`id`, `customer_id`, `serial`, `country_id`, `work_place_id`, `urgent_fee_id`, `discount_id`, `down_payment`, `tag`, `order_status_id`, `order_status_updated_at`, `order_status_updated_by`, `order_type_id`, `created_at`, `updated_at`, `added_by`, `ordering_method_id`, `delivery_type_id`, `delivery_date`, `delivery_area_id`, `delivery_address`, `general_note`, `general_note_by`, `general_note_Date`, `admin_note`, `admin_note_by`, `admin_note_date`, `designer_note`, `designer_note_by`, `designer_note_date`, `sales_note`, `sales_note_by`, `sales_note_date`, `first_designer`, `second_designer`, `active`) VALUES
-(1, 1, 0, 1, 1, 4, 1, 0.00, '0', 1, '1970-01-01 00:00:00', 0, 1, '2018-04-11 07:31:30', '2018-04-11 07:31:30', 1, 1, 1, '2018-05-11 00:00:00', 1, 'qweqw', '<p>qweqwe</p>', 1, NULL, '<p>qweqwe</p>', 0, NULL, '<p>0</p>', 0, NULL, '<p>0</p>', 0, NULL, 1, 1, 1),
-(2, 1, 0, 1, 1, 4, 1, 0.00, '0', 1, '1970-01-01 00:00:00', 0, 1, '2018-04-11 07:31:30', '2018-04-11 07:31:30', 1, 1, 1, '2018-05-11 00:00:00', 1, 'qweqw', '<p>qweqwe</p>', 1, NULL, '<p>qweqwe</p>', 0, NULL, '<p>0</p>', 0, NULL, '<p>0</p>', 0, NULL, 1, 1, 1),
-(3, 1, 0, 1, 1, 4, 1, 0.00, '0', 1, '1970-01-01 00:00:00', 0, 1, '2018-04-11 07:31:30', '2018-04-11 07:31:30', 1, 1, 1, '2018-05-11 00:00:00', 1, 'qweqw', '<p>qweqwe</p>', 1, NULL, '<p>qweqwe</p>', 0, NULL, '<p>0</p>', 0, NULL, '<p>0</p>', 0, NULL, 1, 1, 1),
-(4, 1, 0, 1, 1, 4, 1, 0.00, '0', 1, '1970-01-01 00:00:00', 0, 1, '2018-04-11 07:31:30', '2018-04-11 07:31:30', 1, 1, 1, '2018-05-11 00:00:00', 1, 'qweqw', '<p>qweqwe</p>', 1, NULL, '<p>qweqwe</p>', 0, NULL, '<p>0</p>', 0, NULL, '<p>0</p>', 0, NULL, 1, 1, 1),
-(5, 1, 0, 1, 1, 4, 1, 0.00, '0', 1, '1970-01-01 00:00:00', 0, 1, '2018-04-11 07:31:30', '2018-04-11 07:31:30', 1, 1, 1, '2018-05-11 00:00:00', 1, 'qweqw', '<p>qweqwe</p>', 1, NULL, '<p>qweqwe</p>', 0, NULL, '<p>0</p>', 0, NULL, '<p>0</p>', 0, NULL, 1, 1, 1),
-(6, 1, 0, 1, 1, 4, 1, 0.00, '0', 1, '1970-01-01 00:00:00', 0, 1, '2018-04-11 07:31:30', '2018-04-11 07:31:30', 1, 1, 1, '2018-05-11 00:00:00', 1, 'qweqw', '<p>qweqwe</p>', 1, NULL, '<p>qweqwe</p>', 0, NULL, '<p>0</p>', 0, NULL, '<p>0</p>', 0, NULL, 1, 1, 1),
-(7, 1, 0, 1, 1, 4, 1, 0.00, '0', 1, '1970-01-01 00:00:00', 0, 1, '2018-04-11 07:31:30', '2018-04-11 07:31:30', 1, 1, 1, '2018-05-11 00:00:00', 1, 'qweqw', '<p>qweqwe</p>', 1, NULL, '<p>qweqwe</p>', 0, NULL, '<p>0</p>', 0, NULL, '<p>0</p>', 0, NULL, 1, 1, 1),
-(8, 1, 0, 1, 1, 4, 1, 0.00, '0', 1, '1970-01-01 00:00:00', 0, 1, '2018-04-11 07:31:30', '2018-04-11 07:31:30', 1, 1, 1, '2018-05-11 00:00:00', 1, 'qweqw', '<p>qweqwe</p>', 1, NULL, '<p>qweqwe</p>', 0, NULL, '<p>0</p>', 0, NULL, '<p>0</p>', 0, NULL, 1, 1, 1),
-(9, 1, 0, 1, 1, 4, 1, 0.00, '0', 1, '1970-01-01 00:00:00', 0, 1, '2018-04-11 07:31:30', '2018-04-11 07:31:30', 1, 1, 1, '2018-05-11 00:00:00', 1, 'qweqw', '<p>qweqwe</p>', 1, NULL, '<p>qweqwe</p>', 0, NULL, '<p>0</p>', 0, NULL, '<p>0</p>', 0, NULL, 1, 1, 1),
-(10, 1, 0, 1, 1, 4, 1, 0.00, '0', 1, '1970-01-01 00:00:00', 0, 1, '2018-04-11 07:31:30', '2018-04-11 07:31:30', 1, 1, 1, '2018-05-11 00:00:00', 1, 'qweqw', '<p>qweqwe</p>', 1, NULL, '<p>qweqwe</p>', 0, NULL, '<p>0</p>', 0, NULL, '<p>0</p>', 0, NULL, 1, 1, 1),
-(11, 1, 0, 1, 1, 4, 1, 0.00, '0', 1, '1970-01-01 00:00:00', 0, 1, '2018-04-11 07:31:30', '2018-04-11 07:31:30', 1, 1, 1, '2018-05-11 00:00:00', 1, 'qweqw', '<p>qweqwe</p>', 1, NULL, '<p>qweqwe</p>', 0, NULL, '<p>0</p>', 0, NULL, '<p>0</p>', 0, NULL, 1, 1, 1),
-(12, 1, 0, 1, 1, 4, 1, 0.00, '0', 1, '1970-01-01 00:00:00', 0, 1, '2018-04-11 07:31:30', '2018-04-11 07:31:30', 1, 1, 1, '2018-05-11 00:00:00', 1, 'qweqw', '<p>qweqwe</p>', 1, NULL, '<p>qweqwe</p>', 0, NULL, '<p>0</p>', 0, NULL, '<p>0</p>', 0, NULL, 1, 1, 1);
+INSERT INTO `orders` (`id`, `customer_id`, `serial`, `country_id`, `work_place_id`, `urgent_fee_id`, `discount_id`, `down_payment`, `tag`, `order_status_id`, `order_status_updated_at`, `order_status_updated_by`, `order_type_id`, `created_at`, `updated_at`, `added_by`, `ordering_method_id`, `delivery_type_id`, `delivery_date`, `delivery_area_id`, `delivery_address`, `general_note`, `general_note_by`, `general_note_Date`, `admin_note`, `admin_note_by`, `admin_note_date`, `designer_note`, `designer_note_by`, `designer_note_date`, `sales_note`, `sales_note_by`, `sales_note_date`, `designer_first`, `designer_second`, `active`) VALUES
+(1, 1, 0, 1, 1, NULL, 1, 0.00, '0', 1, '2018-04-11 09:31:30', 0, 1, '2018-04-11 07:31:30', '2018-04-11 07:31:30', 1, 1, 1, '2018-04-20 09:31:30', 1, 'qweqw', '<p>qweqwe</p>', 1, NULL, '', 0, NULL, NULL, 0, NULL, '', 0, NULL, 2, 3, 1),
+(2, 1, 0, 1, 1, NULL, 1, 0.00, '0', 2, '1970-01-01 00:00:00', 0, 2, '2018-04-11 07:31:30', '2018-04-11 07:31:30', 1, 1, 1, '2018-03-15 00:00:00', 1, 'qweqw', '<p>qweqwe</p>', 1, NULL, '', 0, NULL, '<p>0</p>', 0, NULL, '', 0, NULL, 2, 3, 1),
+(3, 1, 0, 1, 1, 4, 1, 0.00, '0', 3, '1970-01-01 00:00:00', 0, 3, '2018-04-11 07:31:30', '2018-04-11 07:31:30', 1, 1, 1, '2018-05-11 00:00:00', 1, 'qweqw', '<p>qweqwe</p>', 1, NULL, '<p>qweqwe</p>', 0, NULL, '<p>0</p>', 0, NULL, '<p>0</p>', 0, NULL, 2, 3, 1),
+(4, 1, 0, 1, 1, 4, 1, 0.00, '0', 4, '1970-01-01 00:00:00', 0, 1, '2018-04-11 07:31:30', '2018-04-11 07:31:30', 1, 1, 1, '2018-05-11 00:00:00', 1, 'qweqw', '<p>qweqwe</p>', 1, NULL, '<p>qweqwe</p>', 0, NULL, '', 0, NULL, '', 0, NULL, 2, 3, 1),
+(5, 1, 0, 1, 1, 4, 1, 0.00, '0', 1, '1970-01-01 00:00:00', 0, 2, '2018-04-11 07:31:30', '2018-04-11 07:31:30', 1, 1, 1, '2018-05-11 00:00:00', 1, 'qweqw', '<p>qweqwe</p>', 1, NULL, '', 0, NULL, '', 0, NULL, '<p>0</p>', 0, NULL, 2, 3, 1),
+(6, 1, 0, 1, 1, 4, 1, 0.00, '0', 1, '1970-01-01 00:00:00', 0, 3, '2018-04-11 07:31:30', '2018-04-11 07:31:30', 1, 1, 1, '2018-05-11 00:00:00', 1, 'qweqw', '<p>qweqwe</p>', 1, NULL, '<p>qweqwe</p>', 0, NULL, '<p>0</p>', 0, NULL, '<p>0</p>', 0, NULL, 2, 3, 1),
+(7, 1, 0, 1, 1, 4, 1, 0.00, '0', 1, '1970-01-01 00:00:00', 0, 1, '2018-04-11 07:31:30', '2018-04-11 07:31:30', 1, 1, 1, '2018-05-11 00:00:00', 1, 'qweqw', '<p>qweqwe</p>', 1, NULL, '<p>qweqwe</p>', 0, NULL, '<p>0</p>', 0, NULL, '', 0, NULL, 2, 3, 1),
+(8, 1, 0, 1, 1, 4, 1, 0.00, '0', 1, '1970-01-01 00:00:00', 0, 1, '2018-04-11 07:31:30', '2018-04-11 07:31:30', 1, 1, 1, '2018-05-11 00:00:00', 1, 'qweqw', '<p>qweqwe</p>', 1, NULL, '<p>qweqwe</p>', 0, NULL, '<p>0</p>', 0, NULL, '<p>0</p>', 0, NULL, 2, 3, 1),
+(9, 1, 0, 1, 1, 4, 1, 0.00, '0', 1, '1970-01-01 00:00:00', 0, 1, '2018-04-11 07:31:30', '2018-04-11 07:31:30', 1, 1, 1, '2018-05-11 00:00:00', 1, 'qweqw', '<p>qweqwe</p>', 1, NULL, '<p>qweqwe</p>', 0, NULL, '<p>0</p>', 0, NULL, '<p>0</p>', 0, NULL, 2, 3, 1),
+(10, 1, 0, 1, 1, 4, 1, 0.00, '0', 1, '1970-01-01 00:00:00', 0, 1, '2018-04-11 07:31:30', '2018-04-11 07:31:30', 1, 1, 1, '2018-05-11 00:00:00', 1, 'qweqw', '<p>qweqwe</p>', 1, NULL, '<p>qweqwe</p>', 0, NULL, '<p>0</p>', 0, NULL, '<p>0</p>', 0, NULL, 2, 3, 1),
+(11, 1, 0, 1, 1, 4, 1, 0.00, '0', 1, '1970-01-01 00:00:00', 0, 1, '2018-04-11 07:31:30', '2018-04-11 07:31:30', 1, 1, 1, '2018-05-11 00:00:00', 1, 'qweqw', '<p>qweqwe</p>', 1, NULL, '<p>qweqwe</p>', 0, NULL, '<p>0</p>', 0, NULL, '<p>0</p>', 0, NULL, 2, 3, 1),
+(12, 1, 0, 1, 1, 4, 1, 0.00, '0', 1, '1970-01-01 00:00:00', 0, 1, '2018-04-11 07:31:30', '2018-04-11 07:31:30', 1, 1, 1, '2018-05-11 00:00:00', 1, 'qweqw', '<p>qweqwe</p>', 1, NULL, '<p>qweqwe</p>', 0, NULL, '<p>0</p>', 0, NULL, '<p>0</p>', 0, NULL, 2, 3, 1);
 
 -- --------------------------------------------------------
 
@@ -949,6 +949,8 @@ DROP TABLE IF EXISTS `order_statuses`;
 CREATE TABLE IF NOT EXISTS `order_statuses` (
   `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
   `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `fa_icon` text COLLATE utf8mb4_unicode_ci,
+  `color` text COLLATE utf8mb4_unicode_ci,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
@@ -958,14 +960,14 @@ CREATE TABLE IF NOT EXISTS `order_statuses` (
 -- Dumping data for table `order_statuses`
 --
 
-INSERT INTO `order_statuses` (`id`, `name`, `created_at`, `updated_at`) VALUES
-(1, 'Recived', '2018-04-08 07:04:34', '2018-04-08 07:04:34'),
-(2, 'Designing', '2018-04-08 07:04:42', '2018-04-08 07:04:42'),
-(3, 'Waiting Confirm', '2018-04-08 07:05:12', '2018-04-08 07:05:12'),
-(4, 'Re-Designing', '2018-04-08 07:05:23', '2018-04-08 07:05:23'),
-(5, 'Confirmed', '2018-04-08 07:05:34', '2018-04-08 07:05:34'),
-(6, 'Printing', '2018-04-08 07:05:46', '2018-04-08 07:05:46'),
-(7, 'finished Prionting', '2018-04-08 07:05:55', '2018-04-08 07:05:55');
+INSERT INTO `order_statuses` (`id`, `name`, `fa_icon`, `color`, `created_at`, `updated_at`) VALUES
+(1, 'Recived', 'fa fa-paper-plane', 'orange', '2018-04-08 07:04:34', '2018-04-08 07:04:34'),
+(2, 'Designing', 'fa fa-paint-brush', 'DeepSkyBlue ', '2018-04-08 07:04:42', '2018-04-08 07:04:42'),
+(3, 'Waiting Confirm', 'fa fa-spinner', 'fushia', '2018-04-08 07:05:12', '2018-04-08 07:05:12'),
+(4, 'Re-Designing', 'fa fa-paint-brush', 'DeepSkyBlue ', '2018-04-08 07:05:23', '2018-04-08 07:05:23'),
+(5, 'Confirmed', 'fa fa-thumbs-o-up', 'green', '2018-04-08 07:05:34', '2018-04-08 07:05:34'),
+(6, 'Printing', 'fa fa-print', 'black', '2018-04-08 07:05:46', '2018-04-08 07:05:46'),
+(7, 'Finished Printing', 'fa fa-flag-checkered', 'terquaz', '2018-04-08 07:05:55', '2018-04-08 07:05:55');
 
 -- --------------------------------------------------------
 
@@ -978,6 +980,8 @@ CREATE TABLE IF NOT EXISTS `order_types` (
   `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
   `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `discount_id` int(11) NOT NULL,
+  `fa_icon` text COLLATE utf8mb4_unicode_ci,
+  `color` text COLLATE utf8mb4_unicode_ci,
   `active` tinyint(1) NOT NULL DEFAULT '1',
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
@@ -988,10 +992,10 @@ CREATE TABLE IF NOT EXISTS `order_types` (
 -- Dumping data for table `order_types`
 --
 
-INSERT INTO `order_types` (`id`, `name`, `discount_id`, `active`, `created_at`, `updated_at`) VALUES
-(1, 'Normal Order', 1, 1, '2018-04-05 12:45:00', '2018-04-08 10:42:54'),
-(2, 'Co-Worker', 3, 1, '2018-04-05 12:45:00', '2018-04-08 10:42:46'),
-(3, 'Sample', 5, 1, '2018-04-05 12:46:00', '2018-04-08 10:42:34');
+INSERT INTO `order_types` (`id`, `name`, `discount_id`, `fa_icon`, `color`, `active`, `created_at`, `updated_at`) VALUES
+(1, 'Normal Order', 1, 'fas fa-shopping-bag', '#aaa', 1, '2018-04-05 12:45:00', '2018-04-08 10:42:54'),
+(2, 'Co-Worker', 3, 'fa fa-handshake', NULL, 1, '2018-04-05 12:45:00', '2018-04-08 10:42:46'),
+(3, 'Sample', 5, 'fab fa-accusoft', 'orange', 1, '2018-04-05 12:46:00', '2018-04-08 10:42:34');
 
 -- --------------------------------------------------------
 
@@ -1563,14 +1567,16 @@ CREATE TABLE IF NOT EXISTS `users` (
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `users_email_unique` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC;
 
 --
 -- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`id`, `role_id`, `name`, `email`, `country_id`, `avatar`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 1, 'Omar', 'admin@admin.com', 0, 'users/default.png', '$2y$10$uUhE7mZ60Bh3BIr/4VALOOkrr4LzZBRRUc0MUJduXi6plDcvyTo7G', NULL, '2018-03-13 07:15:50', '2018-03-13 07:15:50');
+(1, 1, 'Omar Ibrahim', 'admin@admin.com', 0, 'users/default.png', '$2y$10$uUhE7mZ60Bh3BIr/4VALOOkrr4LzZBRRUc0MUJduXi6plDcvyTo7G', NULL, '2018-03-13 07:15:50', '2018-03-13 07:15:50'),
+(2, 1, 'Bassem Zakaria', 'bassem@admin.com', 1, 'users/default.png', '$2y$10$uUhE7mZ60Bh3BIr/4VALOOkrr4LzZBRRUc0MUJduXi6plDcvyTo7G', NULL, '2018-03-13 07:15:50', '2018-03-13 07:15:50'),
+(3, 1, 'Mahmoud Ibrahim', 'mahmoud@admin.com', 1, 'users/default.png', '$2y$10$uUhE7mZ60Bh3BIr/4VALOOkrr4LzZBRRUc0MUJduXi6plDcvyTo7G', NULL, '2018-03-13 07:15:50', '2018-03-13 07:15:50');
 
 -- --------------------------------------------------------
 
